@@ -19,14 +19,13 @@ const NewPost = ({
           value={postTitle}
           onChange={(e) => setPostTitle(e.target.value)}
         />
-        <label htmlFor="postBody">
-          <textarea
-            id="postBody"
-            required
-            value={postBody}
-            onChange={(e) => setPostBody(e.target.value)}></textarea>
-          <button type="submit">Submit</button>
-        </label>
+        <label htmlFor="postBody">Post:</label>
+        <textarea
+          id="postBody"
+          required
+          value={postBody}
+          onChange={(e) => setPostBody(e.target.value)}></textarea>
+        <button type="submit">Submit</button>
       </form>
     </main>
   );
